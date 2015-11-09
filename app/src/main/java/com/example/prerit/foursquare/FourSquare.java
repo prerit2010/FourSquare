@@ -1,6 +1,7 @@
 package com.example.prerit.foursquare;
 /**
  * Created by Prerit on 07-11-2015.
+ * Launcher Activity
  */
 import android.app.Activity;
 import android.content.Intent;
