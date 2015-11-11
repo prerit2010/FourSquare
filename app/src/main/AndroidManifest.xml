@@ -16,7 +16,7 @@
         </activity>
         <activity
             android:name=".FourSquare"
-            android:label="@string/title_activity_main_activity2" >
+            android:label="FourSquare" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

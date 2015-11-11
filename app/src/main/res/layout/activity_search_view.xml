@@ -82,6 +82,46 @@
                 android:textColor="#989A9B"
                 android:textSize="15sp"
                 android:textStyle="normal" />
+            <TextView
+                android:id="@+id/checkins"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="5dp"
+
+                android:textColor="#989A9B"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/usercount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="5dp"
+
+                android:textColor="#989A9B"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/tipcount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="5dp"
+
+                android:textColor="#989A9B"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
         </LinearLayout>
 
 

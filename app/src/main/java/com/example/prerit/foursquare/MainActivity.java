@@ -47,7 +47,6 @@ public class MainActivity extends Activity {
     EditText query;
     String query_string;
     ArrayList<HashMap<String, String>> list;
-
     ListView search_list;
     ProgressDialog dialog = null;
     String latitude = null;
@@ -124,6 +123,21 @@ public class MainActivity extends Activity {
                             intent.putExtra("category", item.get("category").toString());
                         } catch (Exception e) {
                             intent.putExtra("category", "");
+                        }
+                        try {
+                            intent.putExtra("usersCount", item.get("usersCount").toString());
+                        } catch (Exception e) {
+                            intent.putExtra("usersCount", "");
+                        }
+                        try {
+                            intent.putExtra("tipCount", item.get("tipCount").toString());
+                        } catch (Exception e) {
+                            intent.putExtra("tipCount", "");
+                        }
+                        try {
+                            intent.putExtra("checkinsCount", item.get("checkinsCount").toString());
+                        } catch (Exception e) {
+                            intent.putExtra("checkinsCount", "");
                         }
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         getApplicationContext().startActivity(intent);
@@ -229,6 +243,15 @@ public class MainActivity extends Activity {
                             temp.put("category", arr2.getJSONObject(0).getString("shortName"));
                         } catch (Exception e) {
                             Log.e("Logcat: ", e.toString());
+                        }
+
+                        try {
+                            JSONObject obj_stats = new JSONObject(arr.getJSONObject(i).getString("stats"));
+                            temp.put("checkinsCount", obj_stats.getString("checkinsCount"));
+                            temp.put("usersCount", obj_stats.getString("usersCount"));
+                            temp.put("tipCount", obj_stats.getString("tipCount"));
+                        } catch (Exception e) {
+                            Log.e("Log:", e.toString());
                         }
                         list.add(temp);
                     }
